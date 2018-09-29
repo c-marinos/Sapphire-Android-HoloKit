@@ -46,22 +46,6 @@ public class OpenFileButton : MonoBehaviour
 
     }
 
-    public void GetDataFromWeb()
-    {
-        // temp
-
-        /*
-        GetComponent<Dropdowns>().filetypeSelected = "XYZ";
-        string url = @"https://s3.us-east-2.amazonaws.com/sapphirefiles/IRC001+(2).xyz";
-
-
-
-        www = UnityWebRequest.Get(url);
-
-        StartCoroutine(WaitAndPrint(1.0f, www));
-        */
-
-    }
     private IEnumerator WaitAndPrint(float waitTime, UnityWebRequest www)
     {
         yield return www.SendWebRequest();
